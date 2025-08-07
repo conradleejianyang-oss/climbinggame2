@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Climber Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Place images in same directory as this HTML file -->
+  <div id="parallax">
+    <div id="layer1" class="layer"></div>
+    <div id="layer2" class="layer"></div>
+    <div id="layer3" class="layer"></div>
+    <div id="layer4" class="layer"></div>
+  </div>
+  <div id="game">
+    <div id="timer"><div id="timer-inner"></div></div>
+    <div id="score">0</div>
+    <div id="holds"></div>
+    <canvas id="climber" width="80" height="200"></canvas>
+    <div id="controls">
+      <button id="left-btn">LEFT</button>
+      <button id="right-btn">RIGHT</button>
+    </div>
+    <div id="overlay" class="hidden">
+      <div class="message">
+        <p>Game Over</p>
+        <p>Your Score: <span id="final-score"></span></p>
+        <button id="restart-btn">Restart</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
